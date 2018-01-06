@@ -1,0 +1,46 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGray0"
+    tools:context=".Tabs_Fragments.Fragments.fragment_discover">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:text="@string/discover"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/title"
+            android:textStyle="bold" />
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/goto_search"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/border4"
+            android:drawablePadding="8dp"
+            android:drawableRight="@mipmap/search"
+            android:drawableTint="@color/colorWhite"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="@string/search_about_news"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/hint_text_size" />
+    </android.support.design.widget.AppBarLayout>
+
+
+</FrameLayout>

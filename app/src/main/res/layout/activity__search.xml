@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layoutDirection="ltr"
+    android:background="@color/colorWhite"
+    tools:context="brand.smart_news_app.Activities.Activity_Search">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="@dimen/appbar_padding_top"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight=".85"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border4"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/clear_search_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:src="@mipmap/clear"
+                android:tint="@color/colorWhite"
+                />
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/search_text"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:hint="@string/search_about_news"
+                android:textSize="@dimen/hint_text_size"
+                android:paddingLeft="16dp"
+                android:maxLines="1"
+                android:textCursorDrawable="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorWhite"
+                android:layout_gravity="center"
+                android:drawableTint="@color/colorWhite"
+                android:layout_weight=".95" />
+
+            <ImageView
+                android:id="@+id/search_about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:src="@mipmap/search"
+                android:tint="@color/colorWhite"
+                />
+
+        </LinearLayout>
+
+            <TextView
+                android:id="@+id/cancel_search"
+                android:layout_width="0dp"
+                android:layout_weight="0.15"
+                android:layout_height="match_parent"
+                android:text="@string/cancel"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp"
+
+                />
+
+        </LinearLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:src="@mipmap/delete"
+            android:backgroundTint="@color/colorWhite"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:text="@string/history"
+            android:textSize="@dimen/hint_text_size"
+            android:paddingLeft="16dp"
+            android:paddingRight="24dp"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center"
+            android:layout_weight="1.28" />
+
+    </LinearLayout>
+
+</LinearLayout>

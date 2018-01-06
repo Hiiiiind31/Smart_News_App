@@ -1,0 +1,154 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGray0"
+    android:layoutDirection="ltr"
+    android:orientation="vertical"
+    tools:context="brand.smart_news_app.Tabs_Fragments.Fragments.Fragment_Main">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:text="@string/News"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/title"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/Voiced_News"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".25"
+                android:background="@android:color/transparent"
+                android:text="@string/voice"
+                android:textAlignment="center"
+                android:textSize="@dimen/tab__text_size" />
+
+            <Button
+                android:id="@+id/Photo_News"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".25"
+                android:background="@android:color/transparent"
+                android:text="@string/images"
+                android:textAlignment="center"
+                android:textSize="@dimen/tab__text_size" />
+
+            <Button
+                android:id="@+id/Article_News"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".25"
+                android:background="@android:color/transparent"
+                android:text="@string/article"
+                android:textAlignment="center"
+                android:textSize="@dimen/tab__text_size" />
+
+            <Button
+                android:id="@+id/All_News"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".25"
+                android:background="@android:color/transparent"
+                android:text="@string/all"
+                android:textAlignment="center"
+                android:textSize="@dimen/tab__text_size" />
+        </LinearLayout>
+
+        <!--<android.support.design.widget.TabLayout-->
+        <!--android:id="@+id/tabs2"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:tabIndicatorColor="@color/colorWhite"-->
+        <!--app:tabSelectedTextColor="@color/colorWhite"-->
+        <!--app:tabTextColor="@color/colorGray" />-->
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appbar2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/newest_news_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/newest_news"
+                android:textColor="@android:color/black"
+                android:background="@color/colorWhite"
+                android:padding="12dp"
+                android:layout_gravity="end"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/adv_slider"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:scrollbars="horizontal"
+                android:background="@color/colorWhite"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp">
+            </android.support.v7.widget.RecyclerView>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:scrollbars="horizontal" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:clipToPadding="false" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:scrollbars="horizontal" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

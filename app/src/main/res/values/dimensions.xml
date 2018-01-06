@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="N_text_size">32sp</dimen>
+    <dimen name="N_text_size_signup">16sp</dimen>
+    <dimen name="hint_text_size">16sp</dimen>
+    <dimen name="small_text_size">14sp</dimen>
+    <dimen name="tab__text_size">13sp</dimen>
+    <dimen name="title">18sp</dimen>
+
+</resources>

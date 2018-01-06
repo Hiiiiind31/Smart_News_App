@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="menuOptions">
+
+        <item> @string/main</item>
+        <item> @string/discover</item>
+        <item> @string/save</item>
+        <item> @string/profile</item>
+        <item> @string/notifications</item>
+        <item> @string/call_us</item>
+        <item> @string/rules</item>
+        <item> @string/about_us</item>
+    </string-array>
+
+
+    <array name="nav_drawer_icons">
+        <item>@mipmap/home</item>
+        <item>@mipmap/search</item>
+        <item>@mipmap/saved</item>
+        <item>@mipmap/user</item>
+        <item>@mipmap/notification</item>
+        <item>@mipmap/phone</item>
+        <item>@mipmap/terms</item>
+        <item>@mipmap/phone</item>
+
+    </array>
+
+</resources>

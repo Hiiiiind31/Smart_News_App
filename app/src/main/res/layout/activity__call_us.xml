@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layoutDirection="ltr"
+    android:background="@color/colorGray0"
+    tools:context="brand.smart_news_app.Activities.Activity_Call_us">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:orientation="horizontal"
+                android:background="@color/colorWhite"
+                android:layoutDirection="ltr"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/call_us"
+                    android:textSize="@dimen/hint_text_size"
+                    android:textColor="@android:color/black"
+                    android:gravity="center" />
+
+                <ImageView
+                    android:id="@+id/back_callus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/move_back"
+                    android:paddingRight="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:tint="@android:color/black"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="16dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:background="@drawable/border3"
+                android:layout_gravity="center">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/Name_callUs"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/border1"
+                    android:drawableRight="@mipmap/user"
+                    android:hint="@string/name"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:drawablePadding="8dp"
+                    android:textSize="@dimen/hint_text_size"
+                    android:maxLines="1"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@color/colorGray"
+                    android:textCursorDrawable="@color/colorGray"
+                    tools:layout_editor_absoluteX="182dp"
+                    tools:layout_editor_absoluteY="181dp" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/Email_callUs"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/border1"
+                    android:drawableRight="@mipmap/email"
+                    android:hint="@string/email"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:drawablePadding="8dp"
+                    android:textSize="@dimen/hint_text_size"
+                    android:maxLines="1"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@color/colorGray"
+                    android:textCursorDrawable="@color/colorGray"
+                    tools:layout_editor_absoluteX="182dp"
+                    tools:layout_editor_absoluteY="181dp" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/Message_callUs"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/border1"
+                    android:drawableRight="@mipmap/comment"
+                    android:hint="@string/the_message"
+                    android:drawableTint="@color/colorGray"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="@dimen/hint_text_size"
+                    android:inputType="text"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@color/colorGray"
+                    android:drawablePadding="8dp"
+                    android:textCursorDrawable="@color/colorGray"
+                    tools:layout_editor_absoluteX="182dp"
+                    tools:layout_editor_absoluteY="181dp" />
+
+                <Button
+                    android:id="@+id/callUs_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/border2"
+                    android:text="@string/signup"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/hint_text_size"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/password_layout" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
